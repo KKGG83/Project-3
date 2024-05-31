@@ -105,7 +105,7 @@ header > div {
 }
 
 #section1 div img {
-    width: 700px;
+    width: 100%;
 }
 
 #section1 > div > article > p:nth-child(3){
@@ -242,9 +242,6 @@ footer p {
     #section1 > div {
         grid-template-columns: 1fr;
     }
-    #section1 img {
-        width: 100%;
-    }
 
     #section2 > div.oats {
         display: grid;
@@ -262,16 +259,22 @@ footer p {
 
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+    header > div {
+        gap: 10px;
+    }
+
     #section1 > div {
         grid-template-columns: 1fr;
-    }
-    #section1 img {
-        width: 100%;
     }
 
     #section2 > div.oats {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    #section3 > div > article > form {
+        width: 280px;
     }
 
     ul{
